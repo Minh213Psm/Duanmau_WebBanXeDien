@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VinFast - Electric Performance</title>
+    <link rel="stylesheet" href="trangchu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-v">V</span>
+                <span class="logo-text">inFast</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                <li><a href="#vehicles" class="nav-link">Sản phẩm</a></li>
+                <li><a href="#energy" class="nav-link">Giới thiệu</a></li>
+                <li><a href="#charging" class="nav-link">Liên hệ</a></li>
+                <li><a href="#support" class="nav-link">Hỗ trợ</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-secondary">Đăng Kí</button>
+                <button class="btn-primary">Đăng Nhập</button>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - KHÔNG ĐỘNG VÀO PHẦN NÀY -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="badge">
+                    <span class="red-dot"></span>
+                    Mở đặt trước ngay hôm nay
+                </span>
+                <h1 class="hero-title">
+                    Sức mạnh<br>
+                    điện thuần khiết,<br>
+                    Tạc hình trong bóng đêm
+                </h1>
+                <p class="hero-description">
+                    Tinh hoa thủ công Việt Nam kết hợp thiết kế đột phá, tăng tốc tức thì, và <br>
+                    công nghệ kết nối thông minh. Lăn bánh với đẳng cấp – không đánh đổi.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-cta">Khám phá dòng xe</button>
+                    <button class="btn-secondary-dark">Đặt lịch lái thử</button>
+                </div>
+                <div class="specs">
+                    <div class="spec-item">
+                        <div class="spec-label">0-100 km/h</div>
+                        <div class="spec-value">5.3s</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Quãng đường</div>
+                        <div class="spec-value">471 km</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-label">Sạc nhanh</div>
+                        <div class="spec-value">28 phút</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-3d">
+                <div id="car-container"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Cuộn xuống</p>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+        <div class="stats-container">
+            <div class="stat-box" data-aos="fade-up">
+                <div class="stat-number" data-target="150000">0</div>
+                <div class="stat-label">Cổng sạc toàn quốc</div>
+            </div>
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-number" data-target="50000">0</div>
+                <div class="stat-label">Xe VinFast đang lăn bánh</div>
+            </div>
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-number" data-target="63">0</div>
+                <div class="stat-label">Tỉnh thành phủ sóng</div>
+            </div>
+            <div class="stat-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-number" data-target="10">0</div>
+                <div class="stat-label">Năm bảo hành</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Vehicles -->
+    <section class="section vehicles" id="vehicles">
+        <div class="section-header">
+            <span class="section-badge" data-aos="fade-up">Dòng xe điện</span>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+                Khám phá tương lai<br>
+                <span class="gradient-text">di chuyển điện</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                Từ compact đô thị đến SUV hạng sang, mỗi chiếc VinFast đều được chế tác<br>
+                với tinh thần đổi mới và cam kết về hiệu năng vượt trội
+            </p>
+        </div>
+
+        <div class="vehicle-showcase">
+            <!-- VF 3 -->
+            <div class="vehicle-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="vehicle-image-wrapper">
+                    <div class="vehicle-badge">Compact SUV</div>
+                    <img src="img/vf3.png" alt="VinFast VF 3" class="vehicle-img">
+                    <div class="vehicle-glow"></div>
+                </div>
+                <div class="vehicle-info">
+                    <h3 class="vehicle-name">VF 3</h3>
+                    <p class="vehicle-tagline">Nhỏ gọn, Linh hoạt</p>
+                    <p class="vehicle-price">Từ 240 triệu VNĐ</p>
+
+                    <div class="vehicle-specs">
+                        <div class="spec">
+                            <div>
+                                <div class="spec-value">210 km</div>
+                                <div class="spec-name">Quãng đường</div>
+                            </div>
+                        </div>
+                        <div class="spec">
+                            <div>
+                                <div class="spec-value">4 chỗ</div>
+                                <div class="spec-name">Số ghế ngồi</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-actions">
+                        <button class="btn-vehicle-primary">Đặt xe ngay</button>
+                        <button class="btn-vehicle-secondary">Xem chi tiết →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VF 8 - Featured -->
+            <div class="vehicle-card featured" data-aos="fade-up" data-aos-delay="200">
+                <div class="featured-badge">
+                    <span>Bestseller</span>
+                </div>
+                <div class="vehicle-image-wrapper">
+                    <div class="vehicle-badge">eSUV Hạng D</div>
+                    <img src="img/vf8.png" alt="VinFast VF 8" class="vehicle-img">
+                    <div class="vehicle-glow featured-glow"></div>
+                </div>
+                <div class="vehicle-info">
+                    <h3 class="vehicle-name">VF 8</h3>
+                    <p class="vehicle-tagline">Hiệu năng mạnh mẽ</p>
+                    <p class="vehicle-price">Từ 1,090 triệu VNĐ</p>
+
+                    <div class="vehicle-specs">
+                        <div class="spec">
+                            <div>
+                                <div class="spec-value">402 hp</div>
+                                <div class="spec-name">Công suất</div>
+                            </div>
+                        </div>
+                        <div class="spec">
+                            <div>
+                                <div class="spec-value">471 km</div>
+                                <div class="spec-name">Quãng đường</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-actions">
+                        <button class="btn-vehicle-primary">Đặt xe ngay</button>
+                        <button class="btn-vehicle-secondary">Xem chi tiết →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VF 9 -->
+            <div class="vehicle-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="vehicle-image-wrapper">
+                    <div class="vehicle-badge">eSUV Hạng E</div>
+                    <img src="img/vf9.png" alt="VinFast VF 9" class="vehicle-img">
+                    <div class="vehicle-glow"></div>
+                </div>
+                <div class="vehicle-info">
+                    <h3 class="vehicle-name">VF 9</h3>
+                    <p class="vehicle-tagline">Đẳng cấp thương gia</p>
+                    <p class="vehicle-price">Từ 1,491 triệu VNĐ</p>
+
+                    <div class="vehicle-specs">
+                        <div class="spec">
+                            <div>
+                                <div class="spec-value">7 chỗ</div>
+                                <div class="spec-name">Số ghế ngồi</div>
+                            </div>
+                        </div>
+                        <div class="spec">
+                            <div>
+                                <div class="spec-value">Cao cấp</div>
+                                <div class="spec-name">Phân khúc</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vehicle-actions">
+                        <button class="btn-vehicle-primary">Đặt xe ngay</button>
+                        <button class="btn-vehicle-secondary">Xem chi tiết →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-all-container" data-aos="fade-up">
+            <button class="btn-view-all">
+                Xem tất cả dòng xe
+                <span class="arrow">→</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="section technology" id="energy">
+        <div class="tech-bg-wrapper">
+            <img src="img/tech_bg.png" alt="Technology Background" class="tech-bg-img">
+            <div class="tech-overlay"></div>
+        </div>
+
+        <div class="tech-content-wrapper">
+            <div class="tech-content" data-aos="fade-right">
+                <span class="tech-badge">
+                    <span class="badge-dot"></span>
+                    Công nghệ tiên phong
+                </span>
+                <h2 class="tech-title">
+                    Trí tuệ nhân tạo<br>
+                    <span class="gradient-text-cyan">dẫn lối hành trình</span>
+                </h2>
+                <p class="tech-description">
+                    VinFast tích hợp những công nghệ thông minh nhất để mang đến trải nghiệm lái xe an toàn, tiện nghi
+                    và kết nối hoàn hảo.
+                </p>
+
+                <ul class="tech-features">
+                    <li class="tech-feature" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Hệ thống trợ lái nâng cao (ADAS)</h4>
+                            <p>Tự động giữ làn, hỗ trợ đỗ xe, cảnh báo va chạm và giám sát điểm mù. An toàn tối đa trong
+                                mọi hành trình.</p>
+                        </div>
+                    </li>
+
+                    <li class="tech-feature" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Trợ lý ảo Vivi</h4>
+                            <p>Điều khiển xe bằng giọng nói tiếng Việt đa vùng miền. Vivi hiểu bạn và phản hồi tức thì.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="tech-feature" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor"
+                                    stroke-width="2" />
+                                <path d="M3 9H21" stroke="currentColor" stroke-width="2" />
+                                <path d="M9 21V9" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Smart Services</h4>
+                            <p>Mua sắm, giải trí, đặt lịch dịch vụ ngay trên màn hình xe. Hệ sinh thái số hoàn chỉnh.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="btn-tech">
+                    Khám phá công nghệ
+                    <span class="btn-arrow">→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charging Lifestyle Section -->
+    <section class="section lifestyle" id="charging">
+        <div class="lifestyle-container">
+            <div class="lifestyle-content" data-aos="fade-right">
+                <span class="section-badge">Hệ sinh thái sạc</span>
+                <h2 class="lifestyle-title">
+                    Sạc mọi lúc,<br>
+                    <span class="gradient-text">Đi mọi nơi</span>
+                </h2>
+                <p class="lifestyle-description">
+                    Hệ thống trạm sạc VinFast phủ khắp 63 tỉnh thành với công nghệ sạc nhanh DC 150kW.
+                    Chỉ cần 28 phút để nạp đầy năng lượng cho hành trình tiếp theo.
+                </p>
+
+                <div class="lifestyle-features">
+                    <div class="feature-item" data-aos="fade-up">
+                        <div class="feature-number">150K+</div>
+                        <div class="feature-text">
+                            <h4>Cổng sạc</h4>
+                            <p>Khắp toàn quốc</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-number">24/7</div>
+                        <div class="feature-text">
+                            <h4>Cứu hộ pin</h4>
+                            <p>Hỗ trợ khẩn cấp</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-number">28 phút</div>
+                        <div class="feature-text">
+                            <h4>Sạc nhanh</h4>
+                            <p>10-80% pin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lifestyle-actions">
+                    <button class="btn-lifestyle-primary">Tìm trạm sạc gần bạn</button>
+                    <button class="btn-lifestyle-secondary">Tìm hiểu thêm →</button>
+                </div>
+            </div>
+
+            <div class="lifestyle-visual" data-aos="fade-left">
+                <div class="image-wrapper">
+                    <img src="img/Lifestyle & Charging.png" alt="Lifestyle Charging" class="lifestyle-img">
+                    <div class="image-gradient"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-v">V</span>
+                        <span class="logo-text">inFast</span>
+                    </div>
+                    <p class="footer-tagline">Mãnh liệt tinh thần Việt Nam</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Sản phẩm</h4>
+                        <a href="#">VF 3</a>
+                        <a href="#">VF 5 Plus</a>
+                        <a href="#">VF 6</a>
+                        <a href="#">VF 8</a>
+                        <a href="#">VF 9</a>
+                        <a href="#">VF e34</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Dịch vụ</h4>
+                        <a href="#">Đặt lịch lái thử</a>
+                        <a href="#">Đặt lịch bảo dưỡng</a>
+                        <a href="#">Trạm sạc VinFast</a>
+                        <a href="#">Cứu hộ 24/7</a>
+                        <a href="#">Chính sách pin</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Về VinFast</h4>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Sự kiện</a>
+                        <a href="#">Tuyển dụng</a>
+                        <a href="#">Liên hệ</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Đăng ký nhận tin</h4>
+                        <p class="newsletter-text">Cập nhật thông tin mới nhất về sản phẩm và ưu đãi</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Email của bạn" required>
+                            <button type="submit" aria-label="Subscribe">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <p>&copy; 2025 VinFast Auto. Tất cả quyền được bảo lưu.</p>
+                <div class="footer-legal">
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Cookie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r128/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r128/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="trangchu.js"></script>
+</body>
+
+</html>
