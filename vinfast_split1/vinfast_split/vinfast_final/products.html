@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh Sách Xe – VinFast</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+  <div class="page-hero" style="padding-top:110px;">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><span>Dòng xe điện</span></div>
+    <h1>Khám phá <span>dòng xe</span> VinFast</h1>
+    <p>Đa dạng phân khúc – tìm chiếc xe hoàn hảo cho hành trình xanh của bạn.</p>
+  </div>
+
+  <main>
+    <section style="padding:50px 40px;max-width:1400px;margin:0 auto;">
+      
+      <div class="tab-row">
+        <button class="tab-btn active">Tất cả xe</button>
+        <button class="tab-btn">SUV</button>
+        <button class="tab-btn">Sedan</button>
+        <button class="tab-btn">Hatchback</button>
+        <button class="tab-btn">Xe máy điện</button>
+      </div>
+
+      <div class="products-layout">
+
+        <div class="filter-panel reveal">
+          <div class="filter-title">🔍 Bộ lọc</div>
+
+          <div class="filter-group">
+            <div class="filter-group-title">Phân khúc</div>
+            <label class="filter-option"><input type="checkbox" checked> Tất cả</label>
+            <label class="filter-option"><input type="checkbox"> SUV cỡ nhỏ (B)</label>
+            <label class="filter-option"><input type="checkbox"> SUV cỡ vừa (C)</label>
+            <label class="filter-option"><input type="checkbox"> SUV cỡ lớn (D-E)</label>
+            <label class="filter-option"><input type="checkbox"> Hatchback</label>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-title">Tầm hoạt động</div>
+            <label class="filter-option"><input type="radio" name="range"> Tất cả</label>
+            <label class="filter-option"><input type="radio" name="range"> Dưới 350 km</label>
+            <label class="filter-option"><input type="radio" name="range"> 350 – 450 km</label>
+            <label class="filter-option"><input type="radio" name="range"> Trên 450 km</label>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-title">Ngân sách</div>
+
+            <!-- slider -->
+            <input 
+              type="range" 
+              id="budgetSlider"
+              class="range-slider" 
+              min="400" 
+              max="2000" 
+              value="2000">
+
+            <div class="range-labels">
+              <span>400 triệu</span>
+              <span id="budgetVal">2 tỷ</span>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <div class="filter-group-title">Màu sắc</div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;">
+              <div style="width:28px;height:28px;border-radius:50%;background:#fff;border:2px solid #ccc"></div>
+              <div style="width:28px;height:28px;border-radius:50%;background:#1a1a1a"></div>
+              <div style="width:28px;height:28px;border-radius:50%;background:#0056A2"></div>
+              <div style="width:28px;height:28px;border-radius:50%;background:#c0392b"></div>
+              <div style="width:28px;height:28px;border-radius:50%;background:#27ae60"></div>
+              <div style="width:28px;height:28px;border-radius:50%;background:#95a5a6"></div>
+            </div>
+          </div>
+
+          <button class="clear-filter">✕ Xóa bộ lọc</button>
+        </div>
+
+
+        <!-- PRODUCTS -->
+        <div>
+          <div class="products-header">
+            <div class="products-count">Hiển thị <strong>5 xe</strong> phù hợp</div>
+          </div>
+
+          <div class="products-grid">
+
+            <!-- VF5 -->
+            <div class="product-card reveal">
+              <div class="product-img" style="background:#1a1a2e">
+                <img src="img/VF5 plus.jpg">
+              </div>
+              <div class="product-body">
+                <div class="product-name">VF 5 Plus</div>
+                <div class="product-price">Từ <strong>458 triệu đồng</strong></div>
+              </div>
+            </div>
+
+            <!-- VF6 -->
+            <div class="product-card reveal">
+              <div class="product-img" style="background:#0f3460">
+                <img src="img/VF6.jpg">
+              </div>
+              <div class="product-body">
+                <div class="product-name">VF 6</div>
+                <div class="product-price">Từ <strong>675 triệu đồng</strong></div>
+              </div>
+            </div>
+
+            <!-- VF7 -->
+            <div class="product-card reveal">
+              <div class="product-img" style="background:#0a3d62">
+                <img src="img/VF7.jpg">
+              </div>
+              <div class="product-body">
+                <div class="product-name">VF 7</div>
+                <div class="product-price">Từ <strong>850 triệu đồng</strong></div>
+              </div>
+            </div>
+
+            <!-- VF8 -->
+            <div class="product-card reveal">
+              <div class="product-img" style="background:#0d0d0d">
+                <img src="img/VF8.jpg">
+              </div>
+              <div class="product-body">
+                <div class="product-name">VF 8</div>
+                <div class="product-price">Từ <strong>1,057 tỷ đồng</strong></div>
+              </div>
+            </div>
+
+            <!-- VF9 -->
+            <div class="product-card reveal">
+              <div class="product-img" style="background:#050505">
+                <img src="img/VF9.jpg">
+              </div>
+              <div class="product-body">
+                <div class="product-name">VF 9</div>
+                <div class="product-price">Từ <strong>1,479 tỷ đồng</strong></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+<script src="js/products.js"></script>
+<script src="shared.js"></script>
+<script>
+
+function formatPrice(value){
+  if(value >= 1000){
+    let ty = value / 1000
+    if(Number.isInteger(ty)){
+      return ty + " tỷ"
+    }
+    return ty.toFixed(1) + " tỷ"
+  }
+  return value + " triệu"
+}
+
+const slider = document.getElementById("budgetSlider")
+const label = document.getElementById("budgetVal")
+
+slider.addEventListener("input",function(){
+  label.textContent = formatPrice(parseInt(this.value))
+})
+
+</script>
+
+</body>
+</html>

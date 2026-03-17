@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tìm Kiếm – VinFast</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+  <div class="search-hero">
+    <div style="text-align:center;margin-bottom:28px;">
+      <h1 style="font-size:clamp(24px,3vw,36px);font-weight:900;">Tìm kiếm <span style="color:var(--blue)">VinFast</span></h1>
+    </div>
+    <div class="search-bar">
+      <input class="search-input" id="searchInput" placeholder="Tìm xe, tin tức, ưu đãi..." value="VF 8">
+      <button class="search-btn">🔍 Tìm</button>
+    </div>
+    <div class="search-tags">
+      <span>Gợi ý:</span>
+      <div class="search-tag" onclick="setSearch('VF 8')">VF 8</div>
+      <div class="search-tag" onclick="setSearch('VF 9')">VF 9</div>
+      <div class="search-tag" onclick="setSearch('Tầm xa')">Tầm xa</div>
+      <div class="search-tag" onclick="setSearch('Khuyến mãi')">Khuyến mãi</div>
+      <div class="search-tag" onclick="setSearch('Sạc xe điện')">Sạc xe điện</div>
+      <div class="search-tag" onclick="setSearch('Bảo hành')">Bảo hành</div>
+    </div>
+  </div>
+
+  <div class="search-results">
+    <div class="result-meta">Tìm thấy <strong>12 kết quả</strong> cho "<strong id="queryDisplay">VF 8</strong>"</div>
+    <div class="filter-tabs">
+      <button class="filter-tab active">Tất cả (12)</button>
+      <button class="filter-tab">Xe (3)</button>
+      <button class="filter-tab">Tin tức (6)</button>
+      <button class="filter-tab">Ưu đãi (3)</button>
+    </div>
+
+    <div class="result-list">
+      <a href="product-detail.html" style="text-decoration:none;color:inherit;">
+        <div class="result-card reveal">
+          <div class="result-img"><!-- 🖼️ --><img src="" alt="" onerror="this.style.display='none'">🚐</div>
+          <div class="result-info"><div class="result-type">🚗 Xe điện</div><div class="result-title">VinFast VF 8 – SUV cỡ D hạng sang</div><div class="result-desc">471 km tầm xa • 3.8s 0-100 • Tự lái cấp độ 2+</div></div>
+          <div class="result-price">1,057 tr đ</div>
+        </div>
+      </a>
+      <a href="news-detail.html" style="text-decoration:none;color:inherit;">
+        <div class="result-card reveal">
+          <div class="result-img" style="background:#0056A2;"><!-- 🖼️ --><img src="" alt="" onerror="this.style.display='none'">🏆</div>
+          <div class="result-info"><div class="result-type">📰 Tin tức</div><div class="result-title">VF 8 giành 5 sao ASEAN NCAP – Chuẩn an toàn cao nhất</div><div class="result-desc">Kết quả kiểm tra an toàn độc lập khẳng định chất lượng VF 8...</div></div>
+        </div>
+      </a>
+      <a href="promotion.html" style="text-decoration:none;color:inherit;">
+        <div class="result-card reveal">
+          <div class="result-img" style="background:linear-gradient(135deg,#ef4444,#b91c1c);"><!-- 🖼️ --><img src="" alt="" onerror="this.style.display='none'">🎁</div>
+          <div class="result-info"><div class="result-type">🏷️ Ưu đãi</div><div class="result-title">Giảm 50 triệu cho VF 8 tháng 02/2026</div><div class="result-desc">Ưu đãi có hạn đến 28/02/2026 – Áp dụng cho tất cả phiên bản</div></div>
+          <div class="result-price" style="color:#ef4444;">−50 triệu</div>
+        </div>
+      </a>
+      <a href="news-detail.html" style="text-decoration:none;color:inherit;">
+        <div class="result-card reveal">
+          <div class="result-img" style="background:#0a3d62;"><!-- 🖼️ --><img src="" alt="" onerror="this.style.display='none'">⚡</div>
+          <div class="result-info"><div class="result-type">📰 Tin tức</div><div class="result-title">So sánh VF 8 và các đối thủ xe điện cùng phân khúc 2026</div><div class="result-desc">Phân tích chi tiết về thông số, giá cả và trải nghiệm thực tế...</div></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <script src="js/search.js"></script>
+  <script src="shared.js"></script>
+</body>
+</html>

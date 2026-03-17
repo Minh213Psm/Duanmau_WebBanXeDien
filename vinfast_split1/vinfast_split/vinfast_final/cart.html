@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ Hàng – VinFast</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <div class="page-hero" style="padding-top:110px;">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><span>Giỏ hàng</span></div>
+    <h1>Giỏ <span>hàng</span> của bạn</h1>
+  </div>
+
+  <main>
+    <section style="padding:50px 40px;max-width:1280px;margin:0 auto;">
+      <div class="cart-layout">
+        <!-- Cart Items -->
+        <div>
+          <div class="cart-items-header">
+            <div class="cart-title">3 sản phẩm</div>
+            <button class="clear-cart">✕ Xóa tất cả</button>
+          </div>
+
+          <!-- Item 1 -->
+          <div class="cart-item reveal">
+            <div class="cart-item-img">
+              <!-- 🖼️ ẢNH VF8: Thay link --><img src="img/VF8.jpg" alt="" onerror="this.style.display='none'">
+            </div>
+            <div class="cart-item-info">
+              <div class="cart-item-name">VinFast VF 8</div>
+              <div class="cart-item-variant">Màu: Đen Midnight • Phiên bản: Plus • Pin: Thuê</div>
+              <div class="cart-item-actions">
+                <div class="qty-control">
+                  <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+                  <input class="qty-num" value="1" readonly>
+                  <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+                </div>
+                <button class="remove-btn">🗑️ Xóa</button>
+              </div>
+            </div>
+            <div class="cart-item-price">
+              <div class="cart-item-price-main">1,057,000,000 ₫</div>
+              <div class="cart-item-price-orig">1,100,000,000 ₫</div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="cart-item reveal">
+            <div class="cart-item-img" style="background:#1a1a2e;">
+              <!-- 🖼️ ẢNH VF5: Thay link --><img src="img/VF5 plus.jpg" alt="" onerror="this.style.display='none'">
+            </div>
+            <div class="cart-item-info">
+              <div class="cart-item-name">VinFast VF 5 Plus</div>
+              <div class="cart-item-variant">Màu: Trắng Tuyết • Phiên bản: Standard • Pin: Mua</div>
+              <div class="cart-item-actions">
+                <div class="qty-control">
+                  <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+                  <input class="qty-num" value="1" readonly>
+                  <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+                </div>
+                <button class="remove-btn">🗑️ Xóa</button>
+              </div>
+            </div>
+            <div class="cart-item-price">
+              <div class="cart-item-price-main">458,000,000 ₫</div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="cart-item reveal">
+            <div class="cart-item-img" style="background:#0d2137;">
+              <!-- 🖼️ ẢNH PHỤ KIỆN: Thay link --><img src="img/capsac.jpg" alt="" onerror="this.style.display='none'">
+            </div>
+            <div class="cart-item-info">
+              <div class="cart-item-name">Cáp sạc VinFast Type 2</div>
+              <div class="cart-item-variant">Loại: 7.2 kW • Dài: 5m</div>
+              <div class="cart-item-actions">
+                <div class="qty-control">
+                  <button class="qty-btn" onclick="changeQty(this,-1)">−</button>
+                  <input class="qty-num" value="2" readonly>
+                  <button class="qty-btn" onclick="changeQty(this,1)">+</button>
+                </div>
+                <button class="remove-btn">🗑️ Xóa</button>
+              </div>
+            </div>
+            <div class="cart-item-price">
+              <div class="cart-item-price-main">3,600,000 ₫</div>
+              <div class="cart-item-price-orig">1.8tr × 2</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="summary-card reveal">
+          <div class="summary-title">Tóm tắt đơn hàng</div>
+          <div class="summary-row"><span class="label">Tạm tính (3 sản phẩm)</span><span>1,518,600,000 ₫</span></div>
+          <div class="summary-row"><span class="label">Giảm giá</span><span style="color:var(--success,#22c55e)">−43,000,000 ₫</span></div>
+          <div class="summary-row"><span class="label">Phí vận chuyển</span><span style="color:var(--success,#22c55e)">Miễn phí</span></div>
+          <div class="summary-row"><span class="label">Thuế VAT (10%)</span><span>147,560,000 ₫</span></div>
+          <div class="coupon-row">
+            <input class="coupon-input" placeholder="Nhập mã ưu đãi...">
+            <button class="coupon-btn" onclick="alert('Mã hợp lệ!')">Áp dụng</button>
+          </div>
+          <div class="summary-row total"><span class="label">Tổng cộng</span><span style="color:var(--blue)">1,623,160,000 ₫</span></div>
+          <a href="checkout.html" class="checkout-btn">Tiến hành thanh toán →</a>
+          <a href="products.html" class="continue-btn">← Tiếp tục mua sắm</a>
+          <div class="secure-badges">
+            <div class="secure-item"><div>🔒</div>Bảo mật SSL</div>
+            <div class="secure-item"><div>↩️</div>Đổi trả 30 ngày</div>
+            <div class="secure-item"><div>🚚</div>Giao tận nhà</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/cart.js"></script>
+  <script src="shared.js"></script>
+</body>
+</html>

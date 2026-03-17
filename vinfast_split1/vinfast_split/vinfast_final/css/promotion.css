@@ -1,0 +1,309 @@
+/* === PROMOTION.CSS === */
+body {
+    padding-top: 100px;
+}
+
+.promo-hero {
+    background: linear-gradient(135deg, #050e1f, #0a1f3d, #0056A2);
+    padding: 60px 40px;
+    text-align: center;
+    color: white;
+}
+
+.promo-hero-title {
+    font-size: clamp(28px, 4vw, 52px);
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.promo-hero-title span {
+    color: var(--accent);
+}
+
+.promo-hero-sub {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 28px;
+}
+
+.countdown {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.count-block {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px 22px;
+    text-align: center;
+    min-width: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.count-num {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--accent);
+}
+
+.count-label {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.count-sep {
+    font-size: 32px;
+    font-weight: 900;
+    opacity: 0.5;
+    padding-top: 10px;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.promo-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    position: relative;
+}
+
+.promo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(0, 86, 162, 0.18);
+}
+
+.promo-card-img {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.promo-card-img img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hot-badge {
+    position: absolute;
+    top: -1px;
+    right: 20px;
+    background: linear-gradient(135deg, #ef4444, #b91c1c);
+    color: white;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 6px 14px;
+    border-radius: 0 0 12px 12px;
+    letter-spacing: 0.5px;
+}
+
+.promo-body {
+    padding: 24px;
+}
+
+.promo-model-name {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+.promo-desc {
+    font-size: 14px;
+    color: var(--text-mid);
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.promo-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.benefit-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13.5px;
+}
+
+.benefit-row .tick {
+    color: var(--success, #22c55e);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.promo-price-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.promo-old-price {
+    font-size: 13px;
+    color: var(--gray-mid);
+    text-decoration: line-through;
+}
+
+.promo-new-price {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--blue);
+    line-height: 1;
+}
+
+.promo-save {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.promo-end {
+    font-size: 12px;
+    color: var(--gray-mid);
+    margin-bottom: 14px;
+}
+
+.promo-btn {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    background: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.promo-btn:hover {
+    background: var(--blue-dark);
+    transform: translateY(-1px);
+}
+
+.promo-extra {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.extra-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.extra-card {
+    background: linear-gradient(135deg, #050e1f, #0056A2);
+    color: white;
+    border-radius: 16px;
+    padding: 28px;
+    text-align: center;
+}
+
+.extra-icon {
+    font-size: 36px;
+    margin-bottom: 14px;
+}
+
+.extra-title {
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.extra-desc {
+    font-size: 13px;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.voucher-section {
+    background: var(--gray-light);
+    padding: 50px 40px;
+}
+
+.voucher-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    max-width: 1200px;
+    margin: 28px auto 0;
+}
+
+.voucher-card {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.07);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border: 2px dashed var(--gray);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.voucher-card:hover {
+    border-color: var(--blue);
+}
+
+.voucher-icon {
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(135deg, var(--blue), var(--accent));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.voucher-code {
+    font-size: 17px;
+    font-weight: 900;
+    color: var(--blue);
+    margin-bottom: 2px;
+}
+
+.voucher-desc {
+    font-size: 13px;
+    color: var(--text-mid);
+}
+
+.voucher-exp {
+    font-size: 11px;
+    color: var(--gray-mid);
+    margin-top: 4px;
+}

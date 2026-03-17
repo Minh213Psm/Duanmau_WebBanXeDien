@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VinFast - Xe Điện Thông Minh Việt Nam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="script" href="js/index.js">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero" style="padding:0;">
+    <div class="hero-slides">
+      <!-- 🖼️ SLIDE 1: Thay link hình bên dưới -->
+      <div class="hero-slide active">
+        <img src="img/banner1.jpg" alt="VinFast Slide 1"
+          onerror="this.parentElement.style.background='linear-gradient(135deg,#050e1f,#0056A2)'">
+      </div>
+      <!-- 🖼️ SLIDE 2: Thay link hình bên dưới -->
+      <div class="hero-slide">
+        <img src="img/banner2.jpg" alt="VinFast Slide 2"
+          onerror="this.parentElement.style.background='linear-gradient(135deg,#0a0a0a,#16213e)'">
+      </div>
+      <!-- 🖼️ SLIDE 3: Thay link hình bên dưới -->
+      <div class="hero-slide">
+        <img src="img/banner3.jpg" alt="VinFast Slide 3"
+          onerror="this.parentElement.style.background='linear-gradient(135deg,#0d0d0d,#0f3460)'">
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+    <!-- 🖼️ ẢNH XE HERO (bên phải): Thay link hình bên dưới -->
+    <div class="hero-car-bg">
+      <img src="https://vinfastauto.com/themes/porto/files/cache/VF8_car_hero.png" alt="VinFast Hero Car"
+        onerror="this.style.display='none'">
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🏆 Thương hiệu xe điện #1 Việt Nam</div>
+      <h1>Dẫn đầu<br><span>Cuộc cách mạng</span><br>Xe điện</h1>
+      <p>VinFast – Tinh thần Việt Nam mạnh mẽ, hành trình xanh bền vững cho mọi gia đình Việt và thế giới.</p>
+      <div class="hero-ctas">
+        <a href="#models" class="btn-hero-primary">Khám phá dòng xe</a>
+        <a href="#" class="btn-hero-secondary">Đặt lịch lái thử</a>
+      </div>
+    </div>
+    <div class="hero-dots">
+      <button class="dot active" onclick="goSlide(0)"></button>
+      <button class="dot" onclick="goSlide(1)"></button>
+      <button class="dot" onclick="goSlide(2)"></button>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Cuộn xuống</span>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-num">150+</div>
+      <div class="stat-label">Showroom toàn quốc</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">3.000+</div>
+      <div class="stat-label">Trạm sạc VinFast</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">100.000+</div>
+      <div class="stat-label">Khách hàng tin tưởng</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">50+</div>
+      <div class="stat-label">Thị trường toàn cầu</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">10 Năm</div>
+      <div class="stat-label">Bảo hành toàn diện</div>
+    </div>
+  </div>
+
+  <!-- MODELS SECTION -->
+  <section class="models-section" id="models">
+    <div class="section-header">
+      <div class="section-tag">Dòng xe điện</div>
+      <h2 class="section-title">Chọn xe <span>phù hợp</span> với bạn</h2>
+      <p class="section-sub">Đa dạng phân khúc – từ hatchback đến SUV cỡ lớn, VinFast có đủ lựa chọn cho mọi nhu cầu và
+        phong cách sống.</p>
+    </div>
+    <div class="models-grid">
+
+      <div class="model-card vf5">
+        <div class="model-img">
+          <!-- 🖼️ ẢNH VF 5: Thay link bên dưới -->
+          <img src="img/VF5 plus.jpg" alt="VinFast VF 5" onerror="this.style.display='none'">
+          <div class="model-badge">Bán chạy</div>
+        </div>
+        <div class="model-info">
+          <div class="model-name">VF 5 Plus</div>
+          <div class="model-desc">Hatchback điện hiện đại, thông minh và năng động dành cho thế hệ trẻ.</div>
+          <div class="model-specs">
+            <div class="spec">
+              <div class="spec-val">326 km</div>
+              <div class="spec-key">Tầm xa</div>
+            </div>
+            <div class="spec">
+              <div class="spec-val">5 s</div>
+              <div class="spec-key">0–100 km/h</div>
+            </div>
+            <div class="spec">
+              <div class="spec-val">130 kW</div>
+              <div class="spec-key">Công suất</div>
+            </div>
+          </div>
+          <div class="model-price">Từ <strong>458 triệu đồng</strong></div>
+          <a href="#" class="btn-model">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <div class="model-card vf6">
+        <div class="model-img">
+          <!-- 🖼️ ẢNH VF 6: Thay link bên dưới -->
+          <img src="img/VF6.jpg" alt="VinFast VF 6"
+            onerror="this.style.display='none'">
+          <div class="model-badge">Mới 2025</div>
+        </div>
+        <div class="model-info">
+          <div class="model-name">VF 6</div>
+          <div class="model-desc">SUV đô thị cỡ B thực dụng và phong cách, giá thành cạnh tranh vượt trội.</div>
+          <div class="model-specs">
+            <div class="spec">
+              <div class="spec-val">399 km</div>
+              <div class="spec-key">Tầm xa</div>
+            </div>
+            <div class="spec">
+              <div class="spec-val">4.8 s</div>
+              <div class="spec-key">0–100 km/h</div>
+            </div>
+            <div class="spec">
+              <div class="spec-val">150 kW</div>
+              <div class="spec-key">Công suất</div>
+            </div>
+          </div>
+          <div class="model-price">Từ <strong>675 triệu đồng</strong></div>
+          <a href="#" class="btn-model">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <div class="model-card vf7">
+        <div class="model-img">
+          <!-- 🖼️ ẢNH VF 7: Thay link bên dưới -->
+          <img src="img/VF7.jpg" alt="VinFast VF 7"
+            onerror="this.style.display='none'">
+          <div class="model-badge">Hot</div>
+        </div>
+        <div class="model-info">
+          <div class="model-name">VF 7</div>
+          <div class="model-desc">SUV cỡ C thiết kế tương lai, nội thất rộng rãi và hệ thống công nghệ tiên tiến.</div>
+          <div class="model-specs">
+            <div class="spec">
+              <div class="spec-val">431 km</div>
+              <div class="spec-key">Tầm xa</div>
+            </div>
+            <div class="spec">
+              <div class="spec-val">4.2 s</div>
+              <div class="spec-key">0–100 km/h</div>
+            </div>
+            <div class="spec">
+              <div class="spec-val">260 kW</div>
+              <div class="spec-key">Công suất</div>
+            </div>
+          </div>
+          <div class="model-price">Từ <strong>850 triệu đồng</strong></div>
+          <a href="#" class="btn-model">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <div class="model-card vf8">
+        <div class="model-img">
+          <!-- 🖼️ ẢNH VF 8: Thay link bên dưới -->
+          <img src="img/VF8.jpg" alt="VinFast VF 8"
+            onerror="this.style.display='none'">
+          <div class="model-badge">Premium</div>
+        </div>
+        <div class="model-info">
+          <div class="model-name">VF 8</div>
+          <div class="model-desc">SUV cỡ D cao cấp, mạnh mẽ và đầy đủ tính năng công nghệ tự lái thông minh.</div>
+          <div class="model-specs">
+            <div class="spec">
+              <div class="spec-val">471 km</div>
+              <div class="spec-key">Tầm xa</div>
+            </div>
+            <div class="spec">
+              <div class="spec-val">3.8 s</div>
+              <div class="spec-key">0–100 km/h</div>
+            </div>
+            <div class="spec">
+              <div class="spec-val">300 kW</div>
+              <div class="spec-key">Công suất</div>
+            </div>
+          </div>
+          <div class="model-price">Từ <strong>1,057 tỷ đồng</strong></div>
+          <a href="#" class="btn-model">Xem chi tiết</a>
+        </div>
+      </div>
+
+      <div class="model-card vf9">
+        <div class="model-img">
+          <!-- 🖼️ ẢNH VF 9: Thay link bên dưới -->
+          <img src="img/VF9.jpg" alt="VinFast VF 9"
+            onerror="this.style.display='none'">
+          <div class="model-badge">Flagship</div>
+        </div>
+        <div class="model-info">
+          <div class="model-name">VF 9</div>
+          <div class="model-desc">SUV cỡ E 3 hàng ghế, hạng sang, đỉnh cao trải nghiệm và công nghệ tự lái.</div>
+          <div class="model-specs">
+            <div class="spec">
+              <div class="spec-val">594 km</div>
+              <div class="spec-key">Tầm xa</div>
+            </div>
+            <div class="spec">
+              <div class="spec-val">3.6 s</div>
+              <div class="spec-key">0–100 km/h</div>
+            </div>
+            <div class="spec">
+              <div class="spec-val">300 kW</div>
+              <div class="spec-key">Công suất</div>
+            </div>
+          </div>
+          <div class="model-price">Từ <strong>1,479 tỷ đồng</strong></div>
+          <a href="#" class="btn-model">Xem chi tiết</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY VINFAST -->
+  <section class="why-section">
+    <div class="section-header">
+      <div class="section-tag">Cam kết chất lượng</div>
+      <h2 class="section-title">Tại sao chọn <span>VinFast?</span></h2>
+      <p class="section-sub">Chúng tôi không chỉ bán xe – chúng tôi mang đến một hành trình xanh trọn vẹn và an tâm.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🔋</div>
+        <div class="why-title">Thuê pin linh hoạt</div>
+        <div class="why-desc">Chính sách thuê pin độc quyền giúp giảm chi phí mua xe và đảm bảo pin luôn trong tình
+          trạng tốt nhất.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🛡️</div>
+        <div class="why-title">Bảo hành 10 năm</div>
+        <div class="why-desc">Bảo hành toàn diện 10 năm hoặc 200.000 km, bao gồm cả pin và hệ thống điện – cam kết hàng
+          đầu thị trường.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <div class="why-title">Mạng lưới sạc rộng khắp</div>
+        <div class="why-desc">Hơn 3.000 trạm sạc VinFast trải dài toàn quốc, sạc nhanh DC lên đến 150 kW chỉ trong 30
+          phút.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🤖</div>
+        <div class="why-title">Công nghệ AI tiên tiến</div>
+        <div class="why-desc">Hệ thống ADAS, lái tự động cấp độ 2+, màn hình thông minh tích hợp AI giọng nói tiếng
+          Việt.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🏆</div>
+        <div class="why-title">Thiết kế Pininfarina</div>
+        <div class="why-desc">Hợp tác với hãng thiết kế danh tiếng hàng đầu thế giới Pininfarina (Ý) để tạo nên vẻ đẹp
+          vượt thời gian.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🌿</div>
+        <div class="why-title">Tương lai xanh bền vững</div>
+        <div class="why-desc">VinFast cam kết 100% chuyển đổi sang xe điện từ 2023, đóng góp cho mục tiêu phát thải ròng
+          bằng 0 của Việt Nam.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARGING SECTION -->
+  <section class="charging-section">
+    <div class="section-tag">Hạ tầng sạc</div>
+    <h2 class="section-title">Sạc thông minh – <span style="color:#00AEEF">Đi xa không lo</span></h2>
+    <p class="section-sub" style="margin:14px auto 0;">Mạng lưới sạc VinFast lớn nhất Việt Nam, phủ sóng từ đô thị đến
+      cao tốc xuyên quốc gia.</p>
+    <div class="charging-stats">
+      <div class="c-stat">
+        <div class="c-stat-num">3.000+</div>
+        <div class="c-stat-label">Trạm sạc VinFast</div>
+      </div>
+      <div class="c-stat">
+        <div class="c-stat-num">63</div>
+        <div class="c-stat-label">Tỉnh thành phủ sóng</div>
+      </div>
+      <div class="c-stat">
+        <div class="c-stat-num">150 kW</div>
+        <div class="c-stat-label">Công suất sạc DC tối đa</div>
+      </div>
+      <div class="c-stat">
+        <div class="c-stat-num">30 phút</div>
+        <div class="c-stat-label">Sạc từ 10–80%</div>
+      </div>
+    </div>
+    <button class="btn-charging">Tìm trạm sạc gần bạn</button>
+  </section>
+
+  <!-- NEWS SECTION -->
+  <section class="news-section">
+    <div class="section-header">
+      <div class="section-tag">Tin tức & Sự kiện</div>
+      <h2 class="section-title">Cập nhật <span>mới nhất</span></h2>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-img">
+          <!-- 🖼️ ẢNH TIN TỨC 1: Thay link bên dưới -->
+          <img src="img/tintuc1.jpg" alt="Tin tức 1"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#0056A2,#00AEEF)'">
+        </div>
+        <div class="news-body">
+          <div class="news-date">15 Tháng 2, 2026</div>
+          <div class="news-title">VinFast ra mắt gói phần mềm VF Connect thế hệ mới với AI tích hợp toàn diện</div>
+          <div class="news-excerpt">VF Connect cung cấp trải nghiệm lái xe thông minh, cá nhân hóa và kết nối liền mạch
+            với hệ sinh thái Vingroup.</div>
+          <a href="#" class="news-link">Đọc thêm →</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-img">
+          <!-- 🖼️ ẢNH TIN TỨC 2: Thay link bên dưới -->
+          <img src="img/tintuc2.jpg" alt="Tin tức 2"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#003D78,#0056A2)'">
+        </div>
+        <div class="news-body">
+          <div class="news-date">10 Tháng 2, 2026</div>
+          <div class="news-title">VinFast VF 8 đạt 5 sao an toàn ASEAN NCAP – Thương hiệu Việt tự hào trên bản đồ thế
+            giới</div>
+          <div class="news-excerpt">Kết quả kiểm định an toàn nghiêm ngặt của ASEAN NCAP một lần nữa khẳng định chất
+            lượng vượt trội của VinFast.</div>
+          <a href="#" class="news-link">Đọc thêm →</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-img">
+          <!-- 🖼️ ẢNH TIN TỨC 3: Thay link bên dưới -->
+          <img src="img/tintuc3.jpg" alt="Tin tức 3"
+            onerror="this.parentElement.style.background='linear-gradient(135deg,#1A73E8,#003D78)'">
+        </div>
+        <div class="news-body">
+          <div class="news-date">5 Tháng 2, 2026</div>
+          <div class="news-title">VinFast mở rộng sang 3 thị trường châu Á mới trong Q1/2026, thúc đẩy chiến lược toàn
+            cầu hóa</div>
+          <div class="news-excerpt">Sự hiện diện tại thêm 3 quốc gia mới đưa tổng số thị trường của VinFast lên con số
+            50+ trên toàn thế giới.</div>
+          <a href="#" class="news-link">Đọc thêm →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <div class="section-tag"
+      style="color:#0056A2;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;display:block;margin-bottom:12px;">
+      Bắt đầu hành trình xanh</div>
+    <h2 class="cta-title">Sẵn sàng trải nghiệm<br><span style="color:#0056A2">VinFast ngay hôm nay?</span></h2>
+    <p class="cta-sub">Đặt lịch lái thử miễn phí tại showroom gần nhất hoặc tư vấn trực tuyến ngay 24/7.</p>
+    <div class="cta-btns">
+      <button class="btn-cta-primary">Đặt lịch lái thử miễn phí</button>
+      <button class="btn-cta-outline">Tư vấn trực tuyến</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <svg viewBox="0 0 160 44" xmlns="http://www.w3.org/2000/svg" height="38">
+          <text x="0" y="36" font-family="Be Vietnam Pro,sans-serif" font-weight="900" font-size="30"
+            fill="#ffffff">VinFast</text>
+        </svg>
+        <p>Tiên phong trong cuộc cách mạng xe điện tại Việt Nam và trên toàn thế giới. Vì một tương lai xanh bền vững.
+        </p>
+        <div class="footer-socials">
+          <a class="social-btn" href="#">f</a>
+          <a class="social-btn" href="#">in</a>
+          <a class="social-btn" href="#">yt</a>
+          <a class="social-btn" href="#">ig</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Dòng xe</h4>
+        <a href="#">VF 5 Plus</a>
+        <a href="#">VF 6</a>
+        <a href="#">VF 7</a>
+        <a href="#">VF 8</a>
+        <a href="#">VF 9</a>
+        <a href="products.html">Xe máy điện</a>
+      </div>
+      <div class="footer-col">
+        <h4>Dịch vụ</h4>
+        <a href="#">Đặt lịch lái thử</a>
+        <a href="#">Mua xe trực tuyến</a>
+        <a href="contact.html">Trạm sạc</a>
+        <a href="#">Bảo hành & bảo dưỡng</a>
+        <a href="#">Thuê pin</a>
+        <a href="#">VinFast Club</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <a href="#">Liên hệ: 1900 23 23 89</a>
+        <a href="#">Câu hỏi thường gặp</a>
+        <a href="#">Showroom</a>
+        <a href="#">Tải ứng dụng V-App</a>
+        <a href="#">Chính sách bảo mật</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 VinFast Trading & Production LLC. Bản quyền thuộc về VinFast.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Điều khoản sử dụng</a>
+        <a href="#">Chính sách bảo mật</a>
+        <a href="#">Cookie</a>
+      </div>
+    </div>
+  </footer>
+  <script src="shared.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

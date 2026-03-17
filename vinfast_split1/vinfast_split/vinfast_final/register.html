@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Ký – VinFast</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-logo"><a href="index.html" style="text-decoration:none;"><span class="logo-text">VinFast</span></a></div>
+      <div class="auth-title">Tạo tài khoản mới</div>
+      <div class="auth-sub">Tham gia cộng đồng VinFast và nhận ngay ưu đãi dành riêng cho thành viên</div>
+
+      <div class="benefits">
+        <div class="benefit-item"><span class="benefit-icon">⚡</span> Theo dõi đơn hàng</div>
+        <div class="benefit-item"><span class="benefit-icon">🎁</span> Ưu đãi thành viên</div>
+        <div class="benefit-item"><span class="benefit-icon">🔔</span> Cập nhật tin tức</div>
+        <div class="benefit-item"><span class="benefit-icon">🛠️</span> Hỗ trợ ưu tiên</div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Họ *</label><input type="text" class="form-input" placeholder="Nguyễn"></div>
+        <div class="form-group"><label class="form-label">Tên *</label><input type="text" class="form-input" placeholder="Văn A"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Email *</label><input type="email" class="form-input" placeholder="email@example.com"></div>
+      <div class="form-group"><label class="form-label">Số điện thoại *</label><input type="tel" class="form-input" placeholder="0901 234 567"></div>
+      <div class="form-group"><label class="form-label">Ngày sinh</label><input type="date" class="form-input"></div>
+      <div class="form-group">
+        <label class="form-label">Mật khẩu *</label>
+        <div class="show-pass">
+          <input type="password" class="form-input" id="pw1" placeholder="Ít nhất 8 ký tự" oninput="checkStrength(this.value)">
+          <button class="eye-btn" onclick="togglePw('pw1')">👁️</button>
+        </div>
+        <div class="strength-bar"><div class="strength-fill" id="strengthBar"></div></div>
+        <div class="strength-text" id="strengthText"></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Xác nhận mật khẩu *</label>
+        <div class="show-pass">
+          <input type="password" class="form-input" id="pw2" placeholder="Nhập lại mật khẩu">
+          <button class="eye-btn" onclick="togglePw('pw2')">👁️</button>
+        </div>
+      </div>
+      <label class="terms-check">
+        <input type="checkbox" required>
+        <span>Tôi đồng ý với <a href="terms.html">Điều khoản sử dụng</a> và <a href="terms.html">Chính sách bảo mật</a> của VinFast</span>
+      </label>
+      <button class="register-btn" onclick="alert('Đăng ký thành công! Vui lòng kiểm tra email.')">Tạo tài khoản →</button>
+      <div class="auth-footer">Đã có tài khoản? <a href="login.html">Đăng nhập</a></div>
+    </div>
+  </div>
+</body>
+</html>

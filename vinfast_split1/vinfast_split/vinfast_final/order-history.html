@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lịch Sử Đơn Hàng – VinFast</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="css/order-history.css">
+  
+</head>
+
+<body>
+  <div class="page-hero" style="padding-top:110px;">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><a href="profile.html">Hồ
+        sơ</a><span>/</span><span>Lịch sử đơn hàng</span></div>
+    <h1>Lịch sử <span>đơn hàng</span></h1>
+  </div>
+
+  <div class="order-layout">
+    <!-- Sidebar -->
+    <div class="order-sidebar reveal">
+      <div style="font-size:15px;font-weight:800;margin-bottom:16px;">Tài khoản</div>
+      <div class="sidebar-nav">
+        <a href="profile.html">👤 Hồ sơ cá nhân</a>
+        <a href="order-history.html" class="active">📦 Lịch sử đơn hàng</a>
+        <a href="#">🚗 Xe của tôi</a>
+        <a href="#">❤️ Yêu thích</a>
+        <a href="#">🔔 Thông báo</a>
+        <a href="#">🎁 Điểm thưởng</a>
+        <a href="#">🔒 Bảo mật</a>
+        <a href="login.html" style="color:#ef4444;">🚪 Đăng xuất</a>
+      </div>
+    </div>
+
+    <!-- Orders -->
+    <div>
+      <div class="order-stats">
+        <div class="order-stat reveal">
+          <div class="order-stat-num">5</div>
+          <div class="order-stat-label">Tổng đơn hàng</div>
+        </div>
+        <div class="order-stat reveal">
+          <div class="order-stat-num">3</div>
+          <div class="order-stat-label">Đã giao</div>
+        </div>
+        <div class="order-stat reveal">
+          <div class="order-stat-num">1</div>
+          <div class="order-stat-label">Đang vận chuyển</div>
+        </div>
+        <div class="order-stat reveal">
+          <div class="order-stat-num">1</div>
+          <div class="order-stat-label">Đang xử lý</div>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <input class="search-order" placeholder="Tìm mã đơn hàng...">
+        <select class="filter-select">
+          <option>Tất cả trạng thái</option>
+          <option>Đang xử lý</option>
+          <option>Đang vận chuyển</option>
+          <option>Đã giao</option>
+          <option>Đã hủy</option>
+        </select>
+        <select class="filter-select">
+          <option>Tất cả thời gian</option>
+          <option>30 ngày gần đây</option>
+          <option>6 tháng gần đây</option>
+          <option>Năm 2025</option>
+        </select>
+      </div>
+
+      <!-- Order 1: Delivered -->
+      <div class="order-card reveal">
+        <div class="order-card-header">
+          <div>
+            <div class="order-id">🛒 Đơn hàng #VF-2024-00123</div>
+            <div class="order-date">Đặt ngày 15/01/2024</div>
+          </div>
+          <span class="badge badge-success">✅ Đã giao thành công</span>
+        </div>
+        <div class="order-item-row">
+
+          <div class="order-item-img">
+            <img src="img/VF8.jpg" alt="VinFast VF 8">
+          </div>
+
+          <div class="order-item-info">
+            <div class="order-item-name">VinFast VF 8</div>
+            <div class="order-item-var">Plus • Đen Midnight • Thuê pin × 1</div>
+          </div>
+
+          <div class="order-item-price">1,057,000,000 ₫</div>
+
+        </div>
+        <div class="timeline-mini">
+          <div class="tl-step">
+            <div class="tl-dot">✓</div>
+            <div class="tl-label">Đặt hàng</div>
+          </div>
+          <div class="tl-line"></div>
+          <div class="tl-step">
+            <div class="tl-dot">✓</div>
+            <div class="tl-label">Xác nhận</div>
+          </div>
+          <div class="tl-line"></div>
+          <div class="tl-step">
+            <div class="tl-dot">✓</div>
+            <div class="tl-label">Vận chuyển</div>
+          </div>
+          <div class="tl-line"></div>
+          <div class="tl-step">
+            <div class="tl-dot">✓</div>
+            <div class="tl-label">Đã giao</div>
+          </div>
+        </div>
+        <div class="order-card-footer">
+          <div class="order-total">Tổng: <strong>1,057,000,000 ₫</strong></div>
+          <div class="order-actions">
+            <button class="order-action-btn btn-review">⭐ Đánh giá</button>
+            <button class="order-action-btn btn-reorder">🔄 Đặt lại</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order 2: Shipping -->
+      <div class="order-card reveal">
+        <div class="order-card-header">
+          <div>
+            <div class="order-id">🛒 Đơn hàng #VF-2026-00456</div>
+            <div class="order-date">Đặt ngày 18/02/2026</div>
+          </div>
+          <span class="badge badge-accent">🚚 Đang vận chuyển</span>
+        </div>
+        <div class="order-item-row">
+
+          <div class="order-item-img">
+            <img src="img/VF5 plus.jpg" alt="VinFast VF 5 Plus">
+          </div>
+
+          <div class="order-item-info">
+            <div class="order-item-name">VinFast VF 5 Plus</div>
+            <div class="order-item-var">Standard • Trắng × 1</div>
+          </div>
+
+          <div class="order-item-price">458,000,000 ₫</div>
+
+        </div>
+        <div class="timeline-mini">
+          <div class="tl-step">
+            <div class="tl-dot">✓</div>
+            <div class="tl-label">Đặt hàng</div>
+          </div>
+          <div class="tl-line"></div>
+          <div class="tl-step">
+            <div class="tl-dot">✓</div>
+            <div class="tl-label">Xác nhận</div>
+          </div>
+          <div class="tl-line"></div>
+          <div class="tl-step">
+            <div class="tl-dot">✓</div>
+            <div class="tl-label">Vận chuyển</div>
+          </div>
+          <div class="tl-line pending"></div>
+          <div class="tl-step">
+            <div class="tl-dot pending">4</div>
+            <div class="tl-label">Đã giao</div>
+          </div>
+        </div>
+        <div class="order-card-footer">
+          <div class="order-total">Tổng: <strong>458,000,000 ₫</strong></div>
+          <div class="order-actions">
+            <button class="order-action-btn btn-track">📍 Theo dõi đơn</button>
+            <button class="order-action-btn btn-review" style="color:#ef4444;border-color:#ef4444;"
+              onclick="alert('Yêu cầu hủy đã được ghi nhận!')">✕ Hủy đơn</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order 3: Processing -->
+      <div class="order-card reveal">
+
+        <div class="order-card-header">
+          <div>
+            <div class="order-id">🛒 Đơn hàng #VF-2026-00789</div>
+            <div class="order-date">Đặt ngày 20/02/2026</div>
+          </div>
+          <span class="badge badge-warning">⏳ Đang xử lý</span>
+        </div>
+
+        <div class="order-item-row">
+
+          <div class="order-item-img">
+            <img src="img/capsac.jpg" alt="Cáp sạc VinFast">
+          </div>
+
+          <div class="order-item-info">
+            <div class="order-item-name">Cáp sạc VinFast Type 2</div>
+            <div class="order-item-var">5m × 2</div>
+          </div>
+
+          <div class="order-item-price">3,600,000 ₫</div>
+
+        </div>
+
+        <div class="order-card-footer">
+          <div class="order-total">
+            Tổng: <strong class="order-total-price">3,600,000 ₫</strong>
+          </div>
+
+          <div class="order-actions">
+            <button class="order-action-btn btn-cancel" onclick="alert('Yêu cầu hủy đã được ghi nhận!')">
+              ✕ Hủy đơn
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="shared.js"></script>
+</body>
+
+</html>

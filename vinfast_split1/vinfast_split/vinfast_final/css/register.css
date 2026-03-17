@@ -1,0 +1,174 @@
+/* === REGISTER.CSS === */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #050e1f 0%, #0a1f3d 50%, #0056A2 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px 40px;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 24px;
+    padding: 44px;
+    width: 100%;
+    max-width: 520px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.6s ease;
+}
+
+.auth-logo {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.auth-logo .logo-text {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--blue);
+}
+
+.auth-title {
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.auth-sub {
+    font-size: 14px;
+    color: var(--text-mid);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.show-pass {
+    position: relative;
+}
+
+.show-pass .form-input {
+    padding-right: 44px;
+}
+
+.eye-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: var(--gray-mid);
+}
+
+.strength-bar {
+    height: 4px;
+    border-radius: 2px;
+    background: var(--gray);
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+.strength-fill {
+    height: 100%;
+    width: 0%;
+    transition: all 0.3s;
+}
+
+.strength-text {
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.terms-check {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 13.5px;
+    color: var(--text-mid);
+    margin-bottom: 20px;
+}
+
+.terms-check input {
+    accent-color: var(--blue);
+    margin-top: 3px;
+}
+
+.terms-check a {
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.register-btn:hover {
+    background: var(--blue-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 86, 162, 0.35);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: var(--text-mid);
+}
+
+.auth-footer a {
+    color: var(--blue);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.benefits {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    color: var(--text-mid);
+    flex: 1;
+    min-width: 130px;
+}
+
+.benefit-icon {
+    font-size: 16px;
+}
+
+@media(max-width:500px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

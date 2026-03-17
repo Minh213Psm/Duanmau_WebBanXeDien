@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hồ Sơ – VinFast</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <div class="page-hero" style="padding-top:110px;">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><span>Hồ sơ</span></div>
+    <h1>Hồ sơ <span>của tôi</span></h1>
+  </div>
+
+  <div class="profile-layout">
+    <div class="profile-sidebar">
+      <div class="avatar-card reveal">
+        <div class="avatar">
+          <!-- 🖼️ ẢNH ĐẠI DIỆN: Thay link bên dưới -->
+          <img src="" alt="" onerror="this.style.display='none'">👤
+          <div class="avatar-upload">📷 Đổi ảnh</div>
+        </div>
+        <div class="p-name">Nguyễn Minh Khoa</div>
+        <div class="p-email">khoa@email.com</div>
+        <div class="member-badge">⭐ Thành viên Vàng</div>
+        <div class="p-stats">
+          <div class="ps"><div class="ps-num">2</div><div class="ps-lbl">Xe</div></div>
+          <div class="ps"><div class="ps-num">5</div><div class="ps-lbl">Đơn hàng</div></div>
+          <div class="ps"><div class="ps-num">1.250</div><div class="ps-lbl">Điểm</div></div>
+          <div class="ps"><div class="ps-num">4.9★</div><div class="ps-lbl">Đánh giá</div></div>
+        </div>
+      </div>
+      <div class="side-nav reveal">
+        <a href="profile.html" class="active">👤 Thông tin cá nhân</a>
+        <a href="order-history.html">📦 Lịch sử đơn hàng</a>
+        <a href="#">🚗 Xe của tôi</a>
+        <a href="#">❤️ Sản phẩm yêu thích</a>
+        <a href="#">🔔 Thông báo</a>
+        <a href="#">🎁 Điểm thưởng</a>
+        <a href="#">🔒 Đổi mật khẩu</a>
+        <a href="login.html" style="color:#ef4444;">🚪 Đăng xuất</a>
+      </div>
+    </div>
+
+    <div class="profile-main">
+      <div class="pc reveal">
+        <div class="pc-head">
+          <div class="pc-title">Thông tin cá nhân</div>
+          <button class="pc-edit">✏️ Chỉnh sửa</button>
+        </div>
+        <div class="info-grid">
+          <div class="if"><label>Họ và tên</label><div class="val">Nguyễn Minh Khoa</div></div>
+          <div class="if"><label>Số điện thoại</label><div class="val">0912 345 678</div></div>
+          <div class="if"><label>Email</label><div class="val">khoa@email.com</div></div>
+          <div class="if"><label>Ngày sinh</label><div class="val">15/03/1990</div></div>
+          <div class="if"><label>Giới tính</label><div class="val">Nam</div></div>
+          <div class="if"><label>Thành viên từ</label><div class="val">Tháng 3, 2023</div></div>
+          <div class="if" style="grid-column:span 2"><label>Địa chỉ</label><div class="val">28 Duy Tân, Cầu Giấy, Hà Nội</div></div>
+        </div>
+      </div>
+
+      <div class="pc reveal">
+        <div class="pc-head">
+          <div class="pc-title">🚗 Xe của tôi</div>
+          <button class="pc-edit">+ Thêm xe</button>
+        </div>
+        <div class="vehicle-row">
+          <div class="v-img" style="background:#0d0d0d;"><!-- 🖼️ ẢNH VF8: Thay link --><img src="" alt="" onerror="this.style.display='none'">🚐</div>
+          <div style="flex:1;">
+            <div class="v-name">VinFast VF 8 Plus</div>
+            <div class="v-info">Biển số: 30A-123.45 • Đen Midnight • 2024</div>
+            <div style="margin-top:6px;"><span class="badge badge-success">Đang hoạt động</span></div>
+          </div>
+          <button style="padding:8px 14px;border:1.5px solid var(--blue);border-radius:8px;color:var(--blue);background:white;cursor:pointer;font-size:12px;font-weight:600;">Chi tiết</button>
+        </div>
+        <div class="vehicle-row">
+          <div class="v-img" style="background:#1a1a2e;"><!-- 🖼️ ẢNH VF5: Thay link --><img src="" alt="" onerror="this.style.display='none'">🚗</div>
+          <div style="flex:1;">
+            <div class="v-name">VinFast VF 5 Plus</div>
+            <div class="v-info">Biển số: 51F-678.90 • Trắng • 2023</div>
+            <div style="margin-top:6px;"><span class="badge badge-success">Đang hoạt động</span></div>
+          </div>
+          <button style="padding:8px 14px;border:1.5px solid var(--blue);border-radius:8px;color:var(--blue);background:white;cursor:pointer;font-size:12px;font-weight:600;">Chi tiết</button>
+        </div>
+      </div>
+
+      <div class="pc reveal">
+        <div class="pc-head"><div class="pc-title">🎁 Điểm thưởng VinFast</div></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+          <span style="font-size:14px;color:var(--text-mid);">Điểm tích lũy hiện tại</span>
+          <span style="font-size:28px;font-weight:900;color:var(--blue);">1,250 điểm</span>
+        </div>
+        <div class="points-bar"><div class="points-fill"></div></div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--gray-mid);">
+          <span>Vàng: 1.000</span>
+          <span style="color:var(--blue);font-weight:600;">Còn 750 điểm lên Bạch Kim</span>
+          <span>Bạch Kim: 2.000</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px;">
+          <div style="text-align:center;padding:14px;background:var(--gray-light);border-radius:10px;cursor:pointer;" onclick="alert('Tính năng đổi điểm!')">
+            <div style="font-size:22px;margin-bottom:4px;">🎫</div><div style="font-size:13px;font-weight:700;">Đổi voucher</div>
+          </div>
+          <div style="text-align:center;padding:14px;background:var(--gray-light);border-radius:10px;cursor:pointer;">
+            <div style="font-size:22px;margin-bottom:4px;">🛒</div><div style="font-size:13px;font-weight:700;">Thanh toán</div>
+          </div>
+          <div style="text-align:center;padding:14px;background:var(--gray-light);border-radius:10px;cursor:pointer;">
+            <div style="font-size:22px;margin-bottom:4px;">🎁</div><div style="font-size:13px;font-weight:700;">Quà tặng</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc reveal">
+        <div class="pc-head">
+          <div class="pc-title">🔔 Thông báo gần đây</div>
+          <button class="pc-edit">Đọc tất cả</button>
+        </div>
+        <div class="notif-row"><div class="ndot"></div><div class="ntxt"><strong>Ưu đãi:</strong> Giảm 50 triệu cho VF 8 tháng 2 – Chỉ còn 8 ngày!</div><div class="ntime">1 giờ trước</div></div>
+        <div class="notif-row"><div class="ndot"></div><div class="ntxt"><strong>Bảo dưỡng:</strong> VF 8 của bạn đến hạn bảo dưỡng 10,000 km vào tuần tới.</div><div class="ntime">1 ngày trước</div></div>
+        <div class="notif-row"><div class="ndot read"></div><div class="ntxt"><strong>Phần mềm:</strong> VF Connect 3.0 đã sẵn sàng cập nhật trên xe của bạn.</div><div class="ntime">3 ngày trước</div></div>
+        <div class="notif-row"><div class="ndot read"></div><div class="ntxt"><strong>Điểm thưởng:</strong> Nhận 250 điểm từ lần sạc tại VinFast Cầu Giấy.</div><div class="ntime">1 tuần trước</div></div>
+      </div>
+    </div>
+  </div>
+  <script src="shared.js"></script>
+</body>
+</html>

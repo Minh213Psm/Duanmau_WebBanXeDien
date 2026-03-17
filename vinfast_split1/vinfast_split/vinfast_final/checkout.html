@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh Toán – VinFast</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+  <div class="page-hero" style="padding-top:110px;">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a><span>/</span><a href="cart.html">Giỏ hàng</a><span>/</span><span>Thanh toán</span></div>
+    <h1>Thanh <span>toán</span></h1>
+  </div>
+
+  <main>
+    <section style="padding:50px 40px;max-width:1280px;margin:0 auto;">
+      <div class="checkout-layout">
+        <div>
+          <!-- Step 1: Thông tin -->
+          <div class="checkout-step reveal">
+            <div class="step-header">
+              <div class="step-num done">✓</div>
+              <div class="step-h">Thông tin giao hàng</div>
+            </div>
+            <div class="form-row2">
+              <div class="form-group"><label class="form-label">Họ và tên *</label><input class="form-input" type="text" placeholder="Nguyễn Văn A" value="Nguyễn Minh Khoa"></div>
+              <div class="form-group"><label class="form-label">Số điện thoại *</label><input class="form-input" type="tel" placeholder="0901 234 567" value="0912 345 678"></div>
+            </div>
+            <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" value="khoa@email.com"></div>
+            <div class="form-row2">
+              <div class="form-group"><label class="form-label">Tỉnh / Thành phố</label>
+                <select class="form-select"><option>Hà Nội</option><option>TP. Hồ Chí Minh</option><option>Đà Nẵng</option><option>Hải Phòng</option></select>
+              </div>
+              <div class="form-group"><label class="form-label">Quận / Huyện</label>
+                <select class="form-select"><option>Cầu Giấy</option><option>Đống Đa</option><option>Hai Bà Trưng</option></select>
+              </div>
+            </div>
+            <div class="form-group"><label class="form-label">Địa chỉ cụ thể *</label><input class="form-input" placeholder="Số nhà, tên đường..."></div>
+            <div class="form-group"><label class="form-label">Ghi chú đơn hàng</label><textarea class="form-textarea" placeholder="Ghi chú cho tài xế hoặc đại lý..." style="min-height:80px;"></textarea></div>
+          </div>
+
+          <!-- Step 2: Phương thức giao hàng -->
+          <div class="checkout-step reveal">
+            <div class="step-header">
+              <div class="step-num">2</div>
+              <div class="step-h">Phương thức nhận xe</div>
+            </div>
+            <div class="payment-options">
+              <div class="pay-opt active">
+                <div class="pay-opt-icon">🏪</div>
+                <div class="pay-opt-info"><div class="pay-opt-name">Nhận tại Showroom</div><div class="pay-opt-sub">Đến showroom gần nhất – Miễn phí</div></div>
+                <input type="radio" name="delivery" class="pay-opt-radio" checked>
+              </div>
+              <div class="pay-opt">
+                <div class="pay-opt-icon">🚚</div>
+                <div class="pay-opt-info"><div class="pay-opt-name">Giao tận nhà</div><div class="pay-opt-sub">Trong vòng 3-5 ngày làm việc – Miễn phí</div></div>
+                <input type="radio" name="delivery" class="pay-opt-radio">
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Thanh toán -->
+          <div class="checkout-step reveal">
+            <div class="step-header">
+              <div class="step-num">3</div>
+              <div class="step-h">Phương thức thanh toán</div>
+            </div>
+            <div class="payment-options">
+              <div class="pay-opt active">
+                <div class="pay-opt-icon">🏦</div>
+                <div class="pay-opt-info"><div class="pay-opt-name">Chuyển khoản ngân hàng</div><div class="pay-opt-sub">VCB, TCB, MB, TP Bank... – Miễn phí</div></div>
+                <input type="radio" name="payment" class="pay-opt-radio" checked>
+              </div>
+              <div class="pay-opt">
+                <div class="pay-opt-icon">💳</div>
+                <div class="pay-opt-info"><div class="pay-opt-name">Thẻ tín dụng / Ghi nợ</div><div class="pay-opt-sub">Visa, Mastercard, JCB</div></div>
+                <input type="radio" name="payment" class="pay-opt-radio">
+              </div>
+              <div class="pay-opt">
+                <div class="pay-opt-icon">📱</div>
+                <div class="pay-opt-info"><div class="pay-opt-name">Ví điện tử</div><div class="pay-opt-sub">MoMo, ZaloPay, VNPay</div></div>
+                <input type="radio" name="payment" class="pay-opt-radio">
+              </div>
+              <div class="pay-opt">
+                <div class="pay-opt-icon">🏘️</div>
+                <div class="pay-opt-info"><div class="pay-opt-name">Vay trả góp 0%</div><div class="pay-opt-sub">Lãi suất 0% trong 12 tháng – Đối tác: VPBank, MB</div></div>
+                <input type="radio" name="payment" class="pay-opt-radio">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary reveal">
+          <div class="os-title">Đơn hàng của bạn</div>
+          <div class="os-item">
+            <div class="os-item-img"><!-- 🖼️ ẢNH VF8 --><img src="img/VF8.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="os-item-info"><div class="os-item-name">VinFast VF 8</div><div class="os-item-var">Plus • Đen • Thuê pin × 1</div></div>
+            <div class="os-item-price">1,057 tr</div>
+          </div>
+          <div class="os-item">
+            <div class="os-item-img" style="background:#1a1a2e;"><!-- 🖼️ ẢNH VF5 --><img src="img/VF5 plus.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="os-item-info"><div class="os-item-name">VinFast VF 5 Plus</div><div class="os-item-var">Standard • Trắng × 1</div></div>
+            <div class="os-item-price">458 tr</div>
+          </div>
+          <div class="os-item">
+            <div class="os-item-img" style="background:#0d2137;"><!-- 🖼️ ẢNH CÁP SẠC --><img src="img/capsac.jpg" alt="" onerror="this.style.display='none'"></div>
+            <div class="os-item-info"><div class="os-item-name">Cáp sạc Type 2</div><div class="os-item-var">5m × 2</div></div>
+            <div class="os-item-price">3.6 tr</div>
+          </div>
+          <hr class="os-divider">
+          <div class="os-row"><span class="lbl">Tạm tính</span><span>1,518,600,000 ₫</span></div>
+          <div class="os-row"><span class="lbl">Giảm giá</span><span style="color:#22c55e">−43,000,000 ₫</span></div>
+          <div class="os-row"><span class="lbl">Vận chuyển</span><span style="color:#22c55e">Miễn phí</span></div>
+          <div class="os-row"><span class="lbl">VAT (10%)</span><span>147,560,000 ₫</span></div>
+          <div class="os-total"><span>Tổng cộng</span><span style="color:var(--blue)">1.62 tỷ</span></div>
+          <button class="place-order-btn" onclick="window.location='order-history.html'">✅ Đặt hàng ngay</button>
+          <div class="guarantee-row">
+            <div class="guarantee-item"><div>🔒</div>Bảo mật</div>
+            <div class="guarantee-item"><div>↩️</div>Đổi trả</div>
+            <div class="guarantee-item"><div>🛡️</div>Bảo hành</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/checkout.js"></script>
+  <script src="shared.js"></script>
+</body>
+</html>

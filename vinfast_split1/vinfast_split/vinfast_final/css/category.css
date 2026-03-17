@@ -1,0 +1,155 @@
+/* === CATEGORY.CSS === */
+body {
+    padding-top: 100px;
+}
+
+.cat-hero-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+
+.cat-hero-card {
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    height: 280px;
+    transition: all 0.3s;
+}
+
+.cat-hero-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+}
+
+.cat-hero-card:first-child {
+    grid-column: span 2;
+}
+
+.cat-hero-img {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+}
+
+.cat-hero-img img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cat-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 60%);
+}
+
+.cat-hero-body {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    color: white;
+    z-index: 2;
+}
+
+.cat-hero-title {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 4px;
+}
+
+.cat-hero-count {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.cat-section {
+    padding: 20px 40px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cat-section-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cat-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+}
+
+.cat-item {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.cat-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 86, 162, 0.15);
+    border-color: var(--blue);
+}
+
+.cat-item-img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 14px;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    position: relative;
+}
+
+.cat-item-img img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cat-item-name {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.cat-item-count {
+    font-size: 12px;
+    color: var(--gray-mid);
+}
+
+@media(max-width:768px) {
+    .cat-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cat-hero-card:first-child {
+        grid-column: span 1;
+    }
+}

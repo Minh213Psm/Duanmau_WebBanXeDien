@@ -1,0 +1,173 @@
+/* === TERMS.CSS === */
+body {
+    padding-top: 100px;
+    background: var(--gray-light);
+}
+
+.terms-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+
+.terms-toc {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 3px 16px rgba(0, 0, 0, 0.07);
+    position: sticky;
+    top: 110px;
+    height: fit-content;
+}
+
+.toc-title {
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--gray);
+}
+
+.toc-list {
+    list-style: none;
+}
+
+.toc-list li {
+    margin-bottom: 8px;
+}
+
+.toc-list a {
+    color: var(--text-mid);
+    text-decoration: none;
+    font-size: 13.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.toc-list a:hover {
+    color: var(--blue);
+    background: rgba(0, 86, 162, 0.06);
+}
+
+.toc-list a.active {
+    color: var(--blue);
+    font-weight: 700;
+    background: rgba(0, 86, 162, 0.08);
+}
+
+.terms-content {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.terms-section {
+    margin-bottom: 44px;
+}
+
+.terms-section:last-child {
+    margin-bottom: 0;
+}
+
+.terms-section h2 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 14px;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.terms-section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+.terms-section p {
+    font-size: 14.5px;
+    line-height: 1.9;
+    color: var(--text-mid);
+    margin-bottom: 14px;
+}
+
+.terms-section ul {
+    padding-left: 20px;
+    margin-bottom: 14px;
+}
+
+.terms-section ul li {
+    font-size: 14.5px;
+    line-height: 1.8;
+    color: var(--text-mid);
+    margin-bottom: 6px;
+}
+
+.terms-highlight {
+    background: rgba(0, 86, 162, 0.06);
+    border-left: 4px solid var(--blue);
+    padding: 16px 20px;
+    border-radius: 0 10px 10px 0;
+    margin: 20px 0;
+}
+
+.terms-highlight p {
+    margin: 0;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.last-updated {
+    font-size: 13px;
+    color: var(--gray-mid);
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.tab-switcher {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 32px;
+    background: var(--gray-light);
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.tab-sw-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--text-mid);
+}
+
+.tab-sw-btn.active {
+    background: white;
+    color: var(--blue);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media(max-width:900px) {
+    .terms-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .terms-toc {
+        position: static;
+    }
+}

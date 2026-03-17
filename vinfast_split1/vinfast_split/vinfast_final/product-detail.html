@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VinFast VF 8 – Chi Tiết Sản Phẩm</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="css/product-detail.css">
+</head>
+<body>
+  <div class="page-hero" style="padding-top:110px;padding-bottom:40px;">
+    <div class="breadcrumb">
+      <a href="index.html">Trang chủ</a><span>/</span>
+      <a href="products.html">Xe điện</a><span>/</span>
+      <span>VF 8</span>
+    </div>
+    <h1>VinFast <span>VF 8</span></h1>
+  </div>
+
+  <main>
+    <section style="padding:50px 40px;max-width:1280px;margin:0 auto;">
+      <div class="detail-layout">
+        <!-- Gallery -->
+        <div class="gallery reveal">
+          <div class="main-img">
+            <!-- 🖼️ ẢNH CHÍNH VF8: Thay link --><img src="img/VF8.jpg" alt="VF8" onerror="this.style.display='none'">
+            <div class="main-img-emoji"></div>
+          </div>
+          <div class="thumb-row">
+            <div class="thumb active"><!-- 🖼️ THUMB 1 --><img src="img/VF8-thumb1.jpg" alt="VF8 Thumb 1" onerror="this.style.display='none'"></div>
+            <div class="thumb"><!-- 🖼️ THUMB 2 (ngoại thất) --><img src="img/VF8-thumb2.jpg" alt="VF8 Thumb 2" onerror="this.style.display='none'"></div>
+            <div class="thumb"><!-- 🖼️ THUMB 3 (nội thất) --><img src="img/VF8-thumb3.jpg" alt="VF8 Thumb 3" onerror="this.style.display='none'"></div>
+            <div class="thumb"><!-- 🖼️ THUMB 4 (đuôi xe) --><img src="img/VF8-thumb4.jpg" alt="VF8 Thumb 4" onerror="this.style.display='none'"></div>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="product-info reveal">
+          <div class="info-badge-row">
+            <span class="badge badge-blue">SUV cỡ D</span>
+            <span class="badge badge-accent">Premium</span>
+            <span class="badge badge-success">Còn hàng</span>
+          </div>
+          <div class="info-title">VinFast VF 8</div>
+          <div class="info-sub">SUV điện hạng sang – Công nghệ tương lai, trải nghiệm đẳng cấp</div>
+          <div class="rating-row">
+            <div class="stars">★★★★★</div>
+            <div class="rating-count">4.9/5 (248 đánh giá)</div>
+            <a href="#reviews" style="font-size:13px;color:var(--blue);text-decoration:none;font-weight:600;">Xem tất cả →</a>
+          </div>
+
+          <div class="price-section">
+            <div class="price-label">Giá từ</div>
+            <div class="price-main">1,057 tỷ đồng</div>
+            <div class="price-note">💳 Hỗ trợ vay 80% – Lãi suất 0% trong 12 tháng<br>🔋 Thuê pin: 2,190,000 đ/tháng</div>
+          </div>
+
+          <div class="color-section">
+            <div class="section-label">Màu sắc: <strong style="color:var(--blue)">Đen Midnight</strong></div>
+            <div class="color-options">
+              <div class="color-opt active" style="background:#1a1a1a" title="Đen Midnight"></div>
+              <div class="color-opt" style="background:#fff;border:2px solid #ddd" title="Trắng Tuyết"></div>
+              <div class="color-opt" style="background:#0056A2" title="Xanh Sapphire"></div>
+              <div class="color-opt" style="background:#8B0000" title="Đỏ Ruby"></div>
+              <div class="color-opt" style="background:#708090" title="Xám Bạc"></div>
+            </div>
+          </div>
+
+          <div style="margin-bottom:20px;">
+            <div class="section-label">Phiên bản</div>
+            <div class="trim-options">
+              <div class="trim-opt active">Eco (82 kWh)</div>
+              <div class="trim-opt">Plus (87.7 kWh)</div>
+            </div>
+          </div>
+
+          <div class="highlights">
+            <div class="highlight-item"><span class="h-icon">⚡</span> 471 km tầm xa</div>
+            <div class="highlight-item"><span class="h-icon">🏎️</span> 3.8s – 0–100 km/h</div>
+            <div class="highlight-item"><span class="h-icon">🔒</span> Bảo hành 10 năm</div>
+            <div class="highlight-item"><span class="h-icon">🤖</span> Tự lái cấp độ 2+</div>
+          </div>
+
+          <div class="action-row">
+            <button class="add-cart-btn" onclick="alert('Đã thêm vào giỏ hàng!')">🛒 Đặt mua ngay</button>
+            <button class="test-drive-btn" onclick="alert('Đặt lịch lái thử thành công!')">Lái thử</button>
+            <button class="wishlist-btn" onclick="this.textContent=this.textContent==='♡'?'❤️':'♡'">♡</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs-section">
+        <div class="tabs-nav">
+          <button class="active" onclick="switchTab('specs',this)">Thông số kỹ thuật</button>
+          <button onclick="switchTab('features',this)">Trang bị</button>
+          <button onclick="switchTab('reviews',this)" id="reviews">Đánh giá (248)</button>
+          <button onclick="switchTab('warranty',this)">Bảo hành</button>
+        </div>
+
+        <div class="tab-content active" id="tab-specs">
+          <table class="spec-table">
+            <tr><td>Phân khúc</td><td>SUV cỡ D (5 chỗ)</td></tr>
+            <tr><td>Động cơ</td><td>Điện – 2 motor (AWD)</td></tr>
+            <tr><td>Công suất tổng</td><td>300 kW (402 mã lực)</td></tr>
+            <tr><td>Mô-men xoắn</td><td>620 Nm</td></tr>
+            <tr><td>Tăng tốc 0–100 km/h</td><td>3.8 giây</td></tr>
+            <tr><td>Vận tốc tối đa</td><td>200 km/h</td></tr>
+            <tr><td>Dung lượng pin</td><td>87.7 kWh (Plus)</td></tr>
+            <tr><td>Tầm hoạt động (WLTP)</td><td>471 km</td></tr>
+            <tr><td>Sạc nhanh DC (tối đa)</td><td>150 kW</td></tr>
+            <tr><td>Thời gian sạc 10–80%</td><td>~35 phút</td></tr>
+            <tr><td>Chiều dài tổng thể</td><td>4,750 mm</td></tr>
+            <tr><td>Chiều rộng</td><td>1,900 mm</td></tr>
+            <tr><td>Chiều cao</td><td>1,660 mm</td></tr>
+            <tr><td>Khối lượng không tải</td><td>2,100 kg</td></tr>
+          </table>
+        </div>
+
+        <div class="tab-content" id="tab-features">
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
+            <div class="card"><strong>🖥️ Màn hình</strong><p style="font-size:14px;color:var(--text-mid);margin-top:8px;">Màn hình trung tâm 15.6" + màn hình lái 12.3"</p></div>
+            <div class="card"><strong>🤖 Lái tự động</strong><p style="font-size:14px;color:var(--text-mid);margin-top:8px;">ADAS cấp độ 2+ – Giữ làn, theo xe, đỗ xe tự động</p></div>
+            <div class="card"><strong>🔊 Âm thanh</strong><p style="font-size:14px;color:var(--text-mid);margin-top:8px;">Hệ thống âm thanh Harman Kardon 16 loa</p></div>
+            <div class="card"><strong>🌡️ Điều hòa</strong><p style="font-size:14px;color:var(--text-mid);margin-top:8px;">Điều hòa tự động 3 vùng độc lập</p></div>
+            <div class="card"><strong>🪑 Ghế</strong><p style="font-size:14px;color:var(--text-mid);margin-top:8px;">Ghế da Nappa, sưởi, thông gió, chỉnh điện 12 hướng</p></div>
+            <div class="card"><strong>📷 Camera</strong><p style="font-size:14px;color:var(--text-mid);margin-top:8px;">Camera 360° + hệ thống cảm biến 15 điểm</p></div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="tab-reviews">
+          <div class="review-card"><div class="review-header"><span class="reviewer-name">Nguyễn Minh Khoa</span><span class="review-date">15/01/2026</span></div><div class="review-stars">★★★★★</div><div class="review-text">Xe chạy rất êm và mạnh mẽ. Pin trâu hơn tôi nghĩ – chạy Hà Nội – Hải Phòng về còn 60%. Nội thất sang trọng, màn hình lớn, cảm giác lái tuyệt vời!</div></div>
+          <div class="review-card"><div class="review-header"><span class="reviewer-name">Trần Thị Hương</span><span class="review-date">02/02/2026</span></div><div class="review-stars">★★★★★</div><div class="review-text">Là xe điện đầu tiên của gia đình tôi và hoàn toàn hài lòng. Trạm sạc nhiều, sạc 30 phút là đủ đi cả ngày. Dịch vụ hậu mãi VinFast rất tốt.</div></div>
+          <div class="review-card"><div class="review-header"><span class="reviewer-name">Lê Thanh Tuấn</span><span class="review-date">10/02/2026</span></div><div class="review-stars">★★★★☆</div><div class="review-text">Tổng thể rất tốt cho tầm giá. Tính năng ADAS ổn định, xe mát và rộng. Chỉ mong ứng dụng điện thoại cải thiện thêm một chút.</div></div>
+        </div>
+
+        <div class="tab-content" id="tab-warranty">
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;">
+            <div class="card"><strong>🛡️ Bảo hành xe</strong><p style="font-size:14px;color:var(--text-mid);margin-top:8px;">10 năm hoặc 200,000 km (tùy điều kiện nào đến trước)</p></div>
+            <div class="card"><strong>🔋 Bảo hành pin</strong><p style="font-size:14px;color:var(--text-mid);margin-top:8px;">Trọn đời nếu thuê pin VinFast, 8 năm/160,000 km nếu mua pin</p></div>
+            <div class="card"><strong>🔧 Bảo dưỡng miễn phí</strong><p style="font-size:14px;color:var(--text-mid);margin-top:8px;">3 lần bảo dưỡng miễn phí trong 3 năm đầu</p></div>
+            <div class="card"><strong>🚗 Xe thay thế</strong><p style="font-size:14px;color:var(--text-mid);margin-top:8px;">Cung cấp xe thay thế miễn phí khi xe vào xưởng bảo hành</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/product-detail.js"></script>
+  <script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* === 404.CSS === */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #050e1f 0%, #0a1f3d 50%, #0056A2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.error-logo {
+    margin-bottom: 40px;
+}
+
+.error-logo .logo-text {
+    font-size: 32px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+}
+
+.error-num {
+    font-size: clamp(100px, 20vw, 200px);
+    font-weight: 900;
+    line-height: 1;
+    background: linear-gradient(135deg, #ffffff, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-16px)
+    }
+}
+
+.error-car {
+    font-size: 80px;
+    margin-bottom: 24px;
+    filter: drop-shadow(0 8px 20px rgba(0, 174, 239, 0.4));
+}
+
+.error-title {
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: 800;
+    color: white;
+    margin-bottom: 14px;
+}
+
+.error-desc {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 480px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+}
+
+.error-btns {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.error-btn-home {
+    padding: 14px 32px;
+    background: white;
+    color: var(--blue);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.error-btn-home:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.error-btn-back {
+    padding: 14px 32px;
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.error-btn-back:hover {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.quick-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.quick-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.quick-link:hover {
+    color: var(--accent);
+}
+
+.error-road {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+}
